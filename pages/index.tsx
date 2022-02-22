@@ -1,7 +1,9 @@
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
+import CancelRoundedIcon from "@mui/icons-material/CancelRounded";
+import CodeRoundedIcon from "@mui/icons-material/CodeRounded";
+import DnsRoundedIcon from "@mui/icons-material/DnsRounded";
+import { Box, Card, Container, Grid, Typography } from "@mui/material";
 import Footer from "components/Footer";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -19,10 +21,57 @@ export default function Home() {
           py: 4,
         }}
       >
-        <Typography variant="h1" gutterBottom>
-          Pangea
-        </Typography>
-        <Typography>Open source software</Typography>
+        <Grid container spacing={2} sx={{ my: 4 }} alignItems="center">
+          <Grid item>
+            <Typography variant="h1" gutterBottom>
+              Pangea
+            </Typography>
+            <Typography>Open source software</Typography>
+          </Grid>
+          <Grid item xs justifyContent="center" display="flex">
+            <Image
+              src="/nature.svg"
+              alt="Pangea nature"
+              width={300}
+              height={300}
+            />
+          </Grid>
+        </Grid>
+        <Grid container spacing={2} sx={{ my: 4 }}>
+          <Grid item xs={12} sm={4}>
+            <Card variant="outlined" sx={{ p: 2 }}>
+              <Box sx={{ display: "flex", alignItems: "center", pb: 2 }}>
+                <CodeRoundedIcon
+                  sx={{ mr: 2, color: (theme) => theme.palette.primary.main }}
+                />
+                <Typography variant="h3">Open source</Typography>
+              </Box>
+              <Typography>Our software is free and open source.</Typography>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Card variant="outlined" sx={{ p: 2 }}>
+              <Box sx={{ display: "flex", alignItems: "center", pb: 2 }}>
+                <CancelRoundedIcon
+                  sx={{ mr: 2, color: (theme) => theme.palette.primary.main }}
+                />
+                <Typography variant="h3">Ad free</Typography>
+              </Box>
+              <Typography>None of our products have ads.</Typography>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Card variant="outlined" sx={{ p: 2 }}>
+              <Box sx={{ display: "flex", alignItems: "center", pb: 2 }}>
+                <DnsRoundedIcon
+                  sx={{ mr: 2, color: (theme) => theme.palette.primary.main }}
+                />
+                <Typography variant="h3">Modern</Typography>
+              </Box>
+              <Typography>We aim to use modern, fast technology.</Typography>
+            </Card>
+          </Grid>
+        </Grid>
       </Container>
       <Box sx={{ flex: 0 }}>
         <Footer />

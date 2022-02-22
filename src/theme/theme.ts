@@ -22,6 +22,16 @@ const theme = createTheme({
       fontSize: 42,
       fontWeight: "bold",
     },
+    h3: {
+      fontSize: 21,
+      fontWeight: 600,
+    },
+    body1: {
+      fontSize: 21,
+    },
+  },
+  shape: {
+    borderRadius: 10,
   },
 });
 
