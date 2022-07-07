@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
             crossOrigin=""
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
             rel="stylesheet"
           />
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
