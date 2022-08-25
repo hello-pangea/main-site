@@ -10,21 +10,21 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@emotion/cache": "^11.10.1",
+    "@emotion/cache": "^11.10.3",
     "@emotion/react": "^11.10.0",
     "@emotion/server": "^11.10.0",
     "@emotion/styled": "^11.10.0",
-    "@mui/icons-material": "^5.8.4",
-    "@mui/material": "^5.9.3",
-    "next": "^12.2.4",
+    "@mui/icons-material": "^5.10.2",
+    "@mui/material": "^5.10.2",
+    "next": "^12.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^16.11.47",
-    "@types/react": "^18.0.16",
-    "eslint": "^8.21.0",
-    "eslint-config-next": "^12.2.4",
+    "@types/node": "^16.11.56",
+    "@types/react": "^18.0.17",
+    "eslint": "^8.22.0",
+    "eslint-config-next": "^12.2.5",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.7.1",
     "typescript": "^4.7.4"
