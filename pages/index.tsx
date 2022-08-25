@@ -1,6 +1,6 @@
-import CancelRoundedIcon from "@mui/icons-material/CancelRounded";
 import CodeRoundedIcon from "@mui/icons-material/CodeRounded";
 import DnsRoundedIcon from "@mui/icons-material/DnsRounded";
+import LockRoundedIcon from "@mui/icons-material/LockRounded";
 import { Box, Card, Container, Grid, Typography } from "@mui/material";
 import Footer from "components/Footer";
 import Image from "next/image";
@@ -52,23 +52,23 @@ export default function Home() {
           <Grid item xs={12} sm={4}>
             <Card variant="outlined" sx={{ p: 2 }}>
               <Box sx={{ display: "flex", alignItems: "center", pb: 2 }}>
-                <CancelRoundedIcon
-                  sx={{ mr: 2, color: (theme) => theme.palette.primary.main }}
-                />
-                <Typography variant="h3">Ad free</Typography>
-              </Box>
-              <Typography>None of our products have ads.</Typography>
-            </Card>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card variant="outlined" sx={{ p: 2 }}>
-              <Box sx={{ display: "flex", alignItems: "center", pb: 2 }}>
                 <DnsRoundedIcon
                   sx={{ mr: 2, color: (theme) => theme.palette.primary.main }}
                 />
                 <Typography variant="h3">Modern</Typography>
               </Box>
-              <Typography>We aim to use modern, fast technology.</Typography>
+              <Typography>We aim to use modern technology.</Typography>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <Card variant="outlined" sx={{ p: 2 }}>
+              <Box sx={{ display: "flex", alignItems: "center", pb: 2 }}>
+                <LockRoundedIcon
+                  sx={{ mr: 2, color: (theme) => theme.palette.primary.main }}
+                />
+                <Typography variant="h3">Privacy</Typography>
+              </Box>
+              <Typography>Your data belongs to you.</Typography>
             </Card>
           </Grid>
         </Grid>
